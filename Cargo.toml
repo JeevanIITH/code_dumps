@@ -1,0 +1,14 @@
+[package]
+name = "test1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pyo3 = { version = "0.25", features = ["auto-initialize"] }
+
+[env]
+PYO3_PYTHON = "/Users/jeevan/work/candle_rust_ml/test_python_in_rust/test1/.venv/bin/python"
+
+
+[package.metadata]
+pyo3-python = ".venv/bin/python"
